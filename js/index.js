@@ -50,8 +50,9 @@ var app = {
 
 // Play audio
 //
-function playAudio(url) {
+function playAudio(audio) {
     // Play the audio file at url
+	var url = audio.getAttribute('src');
     var my_media = new Media(url,
         // success callback
         function () { console.log("playAudio():Audio Success"); },

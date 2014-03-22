@@ -37,10 +37,10 @@
         <div class="app">
 		<div>V3</div>
 		<div>
-		  <button onclick="playAudio('/android_asset/www/sound/successSound.mp3')">Play successSound local</button>
+		  <button onclick="playAudio(document.getElementById('successSound'))">Play successSound local</button>
 </div>		   
 <div>
-		   <button onclick="playAudio('sound/errorSound.mp3')">Play errorSound local</button>
+		   <button onclick="playAudio(document.getElementById('errorSound'))">Play errorSound local</button>
 </div>		
 <div>	
 			<button onclick="document.getElementById('wwwSound').play()">Play from www</button>
